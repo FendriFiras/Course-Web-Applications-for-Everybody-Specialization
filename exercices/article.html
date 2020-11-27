@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout Article</title>
+</head>
+<body> 
+      <form action="ajout_article.php" method="post">
+        <h1>ajout d'un article</h1>
+
+        <label for="">Designation</label>
+        <input type="text" name="des"><br>
+
+        <label for="">Forniseur</label>
+        <select name="for" id="">
+            <option value="Cisen">Cisen</option>
+            <option value="option2">option2</option>
+        </select><br>
+        
+        <label for="">Points de ventes</label>
+        <input type="checkbox" name="pv" value="chihiya" >chihiya
+        <input type="checkbox" name="pv" value="center ville">center ville
+        <input type="checkbox" name="pv" value="taniour">taniour<br>
+
+
+        <label for="">Prix unitaire</label>
+        <input type="text" name="pu"><br>
+
+
+        <label for="">quentite en stock</label>
+        <input type="text" name="qs"><br>
+
+        <button type="submit">ajout</button>
+              
+      </form>  
+</body>
+</html>

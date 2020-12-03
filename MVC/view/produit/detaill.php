@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <table border="0.5px">
+    <table border="1px">
         <h3>Liste des Produits(detaille)</h3>
         <tr>
             <th>Code</th>

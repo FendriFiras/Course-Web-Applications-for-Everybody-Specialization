@@ -45,9 +45,11 @@ class ModelProduit{
          $req='DELETE FROM produit WHERE code='.$code.'';
          $conn->exec($req);
     }
-    public function setFetchMode($result){
-        return $result->fetchAll(PDO::FETCH_CLASS, 'ModelProduit');
+    public static function updateName($conn,$code,$value,$change){
+        $req='UPDATE produit SET '.$change.'="'.$value.'" WHERE code='.$code.'';
+        $conn->exec($req);
     }
+
     }
 
 

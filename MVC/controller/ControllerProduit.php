@@ -40,7 +40,15 @@ class ControllerProduit{
     public static function deleteByCode() {
         $code =intval($_GET['code']);
         ModelProduit::deleteProduit(Model::$pdo,$code);
-        echo "row deleted succesfully";
+        echo 'row with code:'.$code.' deleted succesfully';
+        ControllerProduit::getAll();
+    }
+    public static function updateByCode(){
+        $code =$_GET['code'];
+        $change=$_GET['change'];
+        $value=$_GET['value'];
+        ModelProduit::updateName(Model::$pdo,$code,$value,$change);
+        echo 'row with code:'.$code.' updated succesfully';
         ControllerProduit::getAll();
     }
 }

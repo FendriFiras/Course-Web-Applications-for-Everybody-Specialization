@@ -26,6 +26,7 @@
                 <td> <?php echo $p['Qte'] ?></td>
                 <td><a href="/LEARNPHP/MVC/controller/routeur.php?action=getBycode&code=<?php echo $p['code'] ?>">Voir detaille</a></td>
                 <td><a href="/LEARNPHP/MVC/controller/routeur.php?action=deleteByCode&code=<?php echo $p['code'] ?>">supprimer</a></td>
+            
             </tr>
         <?php } ?>
     </table>

@@ -44,11 +44,14 @@ class ControllerProduit{
         ControllerProduit::getAll();
     }
     public static function updateByCode(){
-        $code =$_GET['code'];
-        $change=$_GET['change'];
-        $value=$_GET['value'];
+        $code =$_POST['code'];
+        $change=$_POST['change'];
+        $value=$_POST['value'];
         ModelProduit::updateName(Model::$pdo,$code,$value,$change);
-        echo 'row with code:'.$code.' updated succesfully';
+        if (isset($code)){
+            echo 'row with code:'.$code.' updated succesfully';
+        }
+        
         ControllerProduit::getAll();
     }
 }

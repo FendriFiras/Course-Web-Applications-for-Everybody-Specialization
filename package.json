@@ -1,0 +1,25 @@
+{
+  "name": "WebDevLearning(Git)",
+  "version": "1.0.0",
+  "description": "This repository is where I put all my small projects /tests/simples all along with my journey to learning web development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firasfendri72/WebDevLearning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/firasfendri72/WebDevLearning/issues"
+  },
+  "homepage": "https://github.com/firasfendri72/WebDevLearning#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1"
+  }
+}

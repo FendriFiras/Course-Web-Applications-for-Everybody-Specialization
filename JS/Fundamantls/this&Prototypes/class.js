@@ -7,7 +7,7 @@ class workshop {
     }
 }
 
-var deeepJS = new workshop("firas");
+var deepJS = new workshop("firas");
 var reactJS = new workshop("emna");
 
 deepJS.ask("go go go");

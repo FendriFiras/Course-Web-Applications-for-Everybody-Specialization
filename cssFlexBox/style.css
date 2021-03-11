@@ -12,6 +12,7 @@ body{
     /* justify-content:space-evenly; */
     /* to justify content on the cross axes */
     align-items:stretch;
+    
 }
 .container >div{
     margin:10px 20px;
